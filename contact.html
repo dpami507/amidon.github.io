@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/StylesFolder/contactstyle.css">
+    <title>David Amidon</title>
+
+<script>
+    var myNav = document.getElementById('navbar');
+
+    console.log("EE")
+    window.onscroll = function () { 
+        document.getElementById("navbar").style.transition = ".5s";
+
+        if (document.body.scrollTop >= window.innerHeight * .9 || document.documentElement.scrollTop >= window.innerHeight * .9) {
+            document.getElementById("navbar").style.backgroundColor = "rgba(0, 0, 0, .75)"
+        } 
+        else {
+            document.getElementById("navbar").style.backgroundColor = "transparent"
+        }
+    };
+</script>
+
+</head>
+    <body>
+        <div style="background-image: url(imgs/splash.png);" id="splash">
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html" class="navitem">Home</a></li>
+                    <li><a href="portfoliosplash.html" class="navitem">Portfolio</a></li>
+                    <li><a href="blogsplash.html" class="navitem">Blog</a></li>
+                    <li style="float: right; border-bottom: white 1px solid;"><a href="contact.html" class="navitem">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div id="name">
+                <h1 id="name">Contact</h1>
+            </div>
+
+        </div>
+
+
+        <section id="contact_splash">
+            <ul>
+                <li id="contact_ql"><a href="https://twitter.com/i_lik_bred"><img src="imgs/twitter (1).svg" alt=""></a></li>
+                <li id="contact_ql"><a href="https://www.instagram.com/i_lik_bred/"><img src="imgs/instagram.svg" alt=""></a></li>
+                <li id="contact_ql"><a href="mailto:amidon.david@comcast.net"><img src="imgs/envelope-fill.svg" alt=""></a></li>
+            </ul>
+        </section>
+
+        <h2 style="color: white; text-align: center;">Here you can get in contact with me. I will respond on all of these platforms but I prefer Email.</h2>
+    </body>
+</html>
