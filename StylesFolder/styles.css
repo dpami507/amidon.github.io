@@ -56,7 +56,6 @@ li {
 #splash {
     height: 100vh;
     background-position: center;
-    background-image: url("/imgs/splash.png");
     background-repeat: no-repeat;
     background-size: 100vw;
     border-bottom: 10px solid;
