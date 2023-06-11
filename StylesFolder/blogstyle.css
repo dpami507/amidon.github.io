@@ -1,0 +1,81 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(12, 2, 11)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    padding: 0px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+li {
+    padding: 0px;
+    margin: 0px;
+    display: inline-flex;
+    float: left;
+}
+
+.navitem {
+    padding: 20px;
+    margin: 0px;
+    border-bottom: rgba(0, 0, 0, 0) 1px solid;
+    text-decoration: none;
+    color: white;
+}
+
+.navitem:hover {
+    border-bottom: white 1px solid;
+    transition: .2s;
+}
+
+div {
+    display: flex;
+}
+
+#post {
+    align-items: center;
+    justify-content: left;
+    font-size: 3vw;
+    color: white;
+    font-weight: 100;
+    text-align: left;
+    padding-left: 15vw;
+    margin-top: 3vw;
+}
+
+h3 {
+    color: white;
+    margin-top: 2vw;
+    padding-left: 5vw;
+    padding-right: 25vw;
+    padding-bottom: 10vw;
+    font-size: 1vw;
+    font-weight: 100;
+
+    margin-top: 5vw;
+}
+
+#splash {
+    height: 60vh;
+    background-position: center;
+    background-image: url("/imgs/splash.png");
+    background-repeat: no-repeat;
+    background-size: 60vw;
+    border-bottom: 10px solid;
+    border-image-slice: 1;
+    border-width: .15vw;
+    background-color: black;
+    border-image-source: linear-gradient(to left, #4e26d3, #d5593a);
+}

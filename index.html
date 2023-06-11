@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/StylesFolder/styles.css">
+    <title>David Amidon</title>
+
+<script>
+    var myNav = document.getElementById('navbar');
+
+    console.log("EE")
+    window.onscroll = function () { 
+        document.getElementById("navbar").style.transition = ".5s";
+
+        if (document.body.scrollTop >= window.innerHeight * .9 || document.documentElement.scrollTop >= window.innerHeight * .9) {
+            document.getElementById("navbar").style.backgroundColor = "rgba(0, 0, 0, .75)"
+        } 
+        else {
+            document.getElementById("navbar").style.backgroundColor = "transparent"
+        }
+    };
+</script>
+
+</head>
+    <body>
+        <div id="splash">
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html" class="navitem" style="border-bottom: white 1px solid;">Home</a></li>
+                    <li><a href="portfoliosplash.html" class="navitem">Portfolio</a></li>
+                    <li><a href="blogsplash.html" class="navitem">Blog</a></li>
+                    <li style="float: right;"><a href="" class="navitem">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div id="name">
+                <h1 id="name">David <br> Amidon</h1>
+            </div>
+
+        </div>
+
+        <section id="about">
+            <div>
+                <h1 style="font-size: 3vw; margin-bottom: 2vw;">About Me</h1>
+                <h3 style="font-size: 1vw;">I’m a High School student at BUHS and I enjoy doing creative things on the computer.
+                    I have taught myself how to program in Unity using C# and Web Design using HTML and CSS. 
+                    I also enjoy Graphic Design and using other tools like Blender for 3D modeling.</h3>
+            </div>
+        </section>
+
+        <section id="featured">
+            <div class="p_container">
+                <div class="title_column">
+                    <div>
+                        <h1>Portfolio</h1>
+                        <a href="portfoliosplash.html">View More</a>
+                    </div>
+                </div>
+                <div class="img_column">
+                    <a href="Work_imgs/SaberBattle4.png" target="_blank" class="p_card">
+                        <img src="Work_imgs/SaberBattle4.png" alt="">
+                        <div>SaberBattle</div>
+                    </a>
+
+                    <a href="Work_imgs/Workshop Outside.png" target="_blank" class="p_card">
+                        <img src="Work_imgs/Workshop Outside.png" alt="">
+                        <div>Workshop</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured">
+            <div class="p_container">
+                <div class="title_column">
+                    <div>
+                        <h1>Blog</h1>
+                        <a href="blogsplash.html">View More</a>
+                    </div>
+                </div>
+
+                <div class="img_column">
+                    <a href="Blogs/blog_1.html" class="blog_prev">
+                        <img src="imgs/splash.png" alt="">
+                        <div>Blog/#1</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
