@@ -66,7 +66,9 @@ li {
 }
 
 #contact_splash {
-    width: 100%;
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
     margin-top: 2vw;
     margin-bottom: 2vw;
     height: 100%;
@@ -84,11 +86,11 @@ li {
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
+    padding: 1vw; /* Some padding */ 
     border: 2px solid #d5593a; /* Gray border */
     border-radius: 2px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
+    margin-top: .5vw; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
   }

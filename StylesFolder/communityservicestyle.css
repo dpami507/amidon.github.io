@@ -76,14 +76,11 @@ li {
 
 #work_container {
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
     transition: .4s;
 }
 
 #work_card {
     position: relative;
-    text-align: center;
     border-radius: 10px;
     height: 20vw;
     width: 20vw;
