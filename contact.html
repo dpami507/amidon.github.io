@@ -42,11 +42,28 @@
 
 
         <section id="contact_splash">
-            <ul>
-                <li id="contact_ql"><a href="https://twitter.com/i_lik_bred"><img src="imgs/twitter (1).svg" alt=""></a></li>
-                <li id="contact_ql"><a href="https://www.instagram.com/i_lik_bred/"><img src="imgs/instagram.svg" alt=""></a></li>
-                <li id="contact_ql"><a href="mailto:amidon.david@comcast.net"><img src="imgs/envelope-fill.svg" alt=""></a></li>
-            </ul>
+            <form action="action_page.php">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="usa">--- Please Select A Country ---</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="australia">Australia</option>
+                    <option value="australia">Europe</option>
+                </select>
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px;"></textarea>
+            
+                <input type="reset" value="Submit">
+            </form>
         </section>
 
         <h2 style="color: white; text-align: center;">Here you can get in contact with me. I will respond on all of these platforms but I prefer email.</h2>
