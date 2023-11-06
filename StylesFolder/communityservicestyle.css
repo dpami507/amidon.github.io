@@ -62,7 +62,17 @@ li {
     border-image-slice: 1;
     border-width: .15vw;
     background-color: black;
-    border-image-source: linear-gradient(to left, #4e26d3, #d5593a);
+    border-image-source: linear-gradient(to right, #4e26d3, #d5593a);
+    animation-name: gradientLine;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+@keyframes gradientLine {
+    0% {border-image-source: linear-gradient(to right, #4e26d3, #8F3E8A, #d5593a);}
+    33% {border-image-source: linear-gradient(to right, #d5593a, #4e26d3, #8F3E8A);}
+    66% {border-image-source: linear-gradient(to right, #8F3E8A, #d5593a, #4e26d3);}
+    100% {border-image-source: linear-gradient(to right, #4e26d3, #8F3E8A, #d5593a);}
 }
 
 /*-----------------------------------*/
