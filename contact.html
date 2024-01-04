@@ -36,27 +36,49 @@
                 </ul>
             </nav>
 
-            <div id="name">
-                <h1 id="name">Contact</h1>
+            <div id="title">
+                <h1 id="title">Contact</h1>
             </div>
 
         </div>
 
 
         <section id="contact_splash">
-            <form action="action_page.php">
-
-                <label for="fname" style="color: white;">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-            
-                <label for="lname" style="color: white;">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-            
-                <label for="subject" style="color: white;">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px;"></textarea>
-            
-                <input type="reset" value="Submit">
-            </form>
+            <form method="post" action="https://forms.un-static.com/forms/e29f59b42cced43b9efeced5b4806142097fa5c8">
+                <div class="form-group row">
+                  <label for="name" class="col-4 col-form-label" style="color: white;">Name</label>
+                  <div class="col-8">
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                      </div>
+                      <input id="name" name="name" placeholder="Please enter your name" type="text" required="required" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="email" class="col-4 col-form-label" style="color: white;">E-mail address</label>
+                  <div class="col-8">
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-envelope"></i>
+                      </div>
+                      <input id="email" name="email" placeholder="Your e-mail address" type="text" required="required" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="message" class="col-4 col-form-label" style="color: white;">Message</label>
+                  <div class="col-8">
+                    <textarea id="message" name="message" cols="40" rows="10" required="required" class="form-control"></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="offset-4 col-8">
+                    <button name="submit" type="submit" id="submit" class="btn btn-primary">Send</button>
+                  </div>
+                </div>
+              </form>
         </section>
     </body>
 </html>

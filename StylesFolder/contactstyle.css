@@ -13,6 +13,19 @@ body {
     box-sizing: border-box;
 }
 
+#title {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    font-size: 3vw;
+    color: white;
+    font-weight: 100;
+    text-align: left;
+    padding-left: 10vw;
+}
+
 nav {
     padding: 0px;
     position: fixed;
@@ -38,19 +51,6 @@ li {
 .navitem:hover {
     border-bottom: white 1px solid;
     transition: .2s;
-}
-
-#name {
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-
-    font-size: 3vw;
-    color: white;
-    font-weight: 100;
-    text-align: left;
-    padding-left: 10vw;
 }
 
 #splash {
@@ -106,7 +106,7 @@ input[type=text], select, textarea {
   }
   
   /* Style the submit button with a specific background color etc */
-  input[type=reset] {
+  #submit {
     background-color: transparent;
     border: 2px #391f90 solid;
     color: white;
@@ -116,8 +116,8 @@ input[type=text], select, textarea {
   }
   
   /* When moving the mouse over the submit button, add a darker green color */
-  input[type=reset]:hover {
+  #submit:hover {
+    transition: .1s;
     border: 2px #391f90 solid;
-    background-color: #391f90;
-    transition: .2s;
+    background: #391f90;
   }
