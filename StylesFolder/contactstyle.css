@@ -97,8 +97,8 @@ li {
 input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 1vw; /* Some padding */ 
-    border: 2px solid #d5593a; /* Gray border */
-    border-radius: 2px; /* Rounded borders */
+    border: 2px solid #391f90; /* Gray border */
+    border-radius: 5px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: .5vw; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
