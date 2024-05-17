@@ -98,6 +98,18 @@ li {
 
 /*-----------------------------------*/
 
+@property --myColor1 {
+    syntax: '<color>';
+    initial-value: black;
+    inherits: false;
+  }
+  
+  @property --myColor2 {
+    syntax: '<color>';
+    initial-value: black;
+    inherits: false;
+  }
+
 .title_column {
     width: 30%;
     padding: 1vw;
@@ -122,18 +134,23 @@ li {
     border-image-slice: 1;
     border-width: .2vw;
     border-image-source: linear-gradient(to left, #4e26d3, #d5593a);
+    background: linear-gradient(to left, var(--myColor1), var(--myColor2));
+    transition: --myColor1 .3s, --myColor2 .3s;
     padding: .5vw 1vw;
 }
 
 .title_column a:hover {
-    color: rgba(255, 255, 255, 0.5);
+    color: white;
     font-size: 1vw;
     border: 1px solid;
     border-image-slice: 1;
     border-width: .1vw;
     border-image-source: linear-gradient(to left, #4e26d3, #d5593a);
 
-    transition: .3s;
+    --myColor1: #4e26d3;
+    --myColor2: #d5593a;
+
+    background: linear-gradient(to left, var(--myColor1), var(--myColor2));
 }
 
 .img_column {
@@ -164,6 +181,7 @@ li {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    transition: .4s;
 }
 
 .p_card > div {
@@ -173,10 +191,11 @@ li {
     font-size: 2vw;
     color: white;
     text-decoration: none;
+    transition: .4s;
 }
 
 .p_card:hover > img {
-    opacity: 50%;
+    opacity: 25%;
     transition: .4s;
     filter: blur(1px);
     transform: scale(1.1);
@@ -184,49 +203,6 @@ li {
 
 .p_card:hover {
     outline: 1px solid white;
-    outline-offset: -1vh;
     transition: .4s;
-}
-
-/*-----------------------------------*/
-
-.blog_prev {
-    position: relative;
-    text-align: center;
-    border-radius: 10px;
-    height: 20vw;
-    width: 20vw;
-    margin: 1vw;
-    overflow: hidden;
-    outline: 1px solid transparent;
-    transition: .4s;
-}
-
-.blog_prev > img {
-    border-radius: 10px;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.blog_prev > div {
-    position: absolute;
-    bottom: 15px;
-    left: 20px;
-    font-size: 2vw;
-    color: white;
-    text-decoration: none;
-}
-
-.blog_prev:hover > img {
-    opacity: 50%;
-    transition: .4s;
-    filter: blur(1px);
-    transform: scale(1.1);
-}
-
-.blog_prev:hover {
-    transition: .4s;
-    outline: 1px solid white;
     outline-offset: -1vh;
 }

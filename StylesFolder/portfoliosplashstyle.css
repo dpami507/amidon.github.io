@@ -91,18 +91,6 @@ li {
     transition: .4s;
 }
 
-#work_card {
-    position: relative;
-    text-align: center;
-    border-radius: 1vw;
-    height: 20vw;
-    width: 20vw;
-    margin: 1vw;
-    overflow: hidden;
-    outline: 1px solid transparent;
-    transition: .4s;
-}
-
 #work_card > img {
     transition: .4s;
     border-radius: 1vw;
@@ -124,7 +112,7 @@ li {
 }
 
 #work_card:hover > img {
-    opacity: 50%;
+    opacity: 25%;
     transition: .4s;
     filter: blur(1px);
     transform: scale(1.1);
@@ -147,25 +135,108 @@ li {
     text-align: left;
 }
 
-#about_text > p{
-    font-size: 1vw;
-    margin-right: 2vw;
-    margin-top: 1vw;
-}
-
-#about_text > h2{
-    margin-top: .3vw;
-    line-height: 3vw;
-}
-
-#cslist {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
-
 #cslist li {
     padding: 2px 5px;   
+}
+
+@media (min-width:0px){
+    #cslist {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    #work_card {
+        position: relative;
+        text-align: center;
+        border-radius: 1vw;
+        height: 50vw;
+        width: 50vw;
+        margin: 1vw;
+        overflow: hidden;
+        outline: 1px solid transparent;
+        transition: .4s;
+    }
+
+    #about_text > p{
+        font-size: 3vw;
+        margin-right: 2vw;
+        margin-top: 1vw;
+    }
+    
+    #about_text > h2{
+        margin-top: .3vw;
+        line-height: 7vw;
+        font-size: 6vw;
+    }
+}
+
+@media (min-width:600px){
+    #cslist {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+    #work_card {
+        position: relative;
+        text-align: center;
+        border-radius: 1vw;
+        height: 30vw;
+        width: 30vw;
+        margin: 1vw;
+        overflow: hidden;
+        outline: 1px solid transparent;
+        transition: .4s;
+    }
+
+    #about_text > p{
+        font-size: 1.75vw;
+        margin-right: 2vw;
+        margin-top: 1vw;
+    }
+    
+    #about_text > h2{
+        margin-top: .3vw;
+        line-height: 4vw;
+        font-size: 3.5vw;
+    }
+}
+
+@media (min-width:1000px){
+    #cslist {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    #work_card {
+        position: relative;
+        text-align: center;
+        border-radius: 1vw;
+        height: 20vw;
+        width: 20vw;
+        margin: 1vw;
+        overflow: hidden;
+        outline: 1px solid transparent;
+        transition: .4s;
+    }
+
+    #about_text > p{
+        font-size: 1vw;
+        margin-right: 2vw;
+        margin-top: 1vw;
+    }
+    
+    #about_text > h2{
+        margin-top: .3vw;
+        line-height: 3vw;
+        font-size: 2.75vw;
+    }
 }
