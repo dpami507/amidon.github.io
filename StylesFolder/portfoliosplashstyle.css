@@ -93,11 +93,9 @@ li {
 
 #work_card > img {
     transition: .4s;
-    border-radius: 1vw;
     height: 100%;
     width: 100%;
     object-fit: cover;
-    position: relative;
 }
 
 #work_card > div {
@@ -133,10 +131,6 @@ li {
     position: relative;
     top: 10px;
     text-align: left;
-}
-
-#cslist li {
-    padding: 2px 5px;   
 }
 
 @media (min-width:0px){
@@ -237,6 +231,6 @@ li {
     #about_text > h2{
         margin-top: .3vw;
         line-height: 3vw;
-        font-size: 2.75vw;
+        font-size: 2.5vw;
     }
 }
