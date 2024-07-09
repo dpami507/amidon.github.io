@@ -79,7 +79,6 @@ li {
 
 #about {
     margin-top: 5vw;
-    margin-bottom: 5vw;
     width: 50vw;
     margin-left: auto;
     margin-right: auto;
@@ -90,9 +89,10 @@ li {
 /*-----------------------------------*/
 
 .p_container {
-    display: flex; 
+    display: grid; 
     width: 100%;
-    height: 30vw;
+    height: auto;
+    grid-template-columns: 20% 20% 20%;
     justify-content: center;
 }
 
@@ -111,14 +111,13 @@ li {
   }
 
 .title_column {
-    width: 30%;
     padding: 1vw;
     text-align: center;
-
-    display: flex;
+    width: 20%;
+    display: inline-grid;
     align-items: center;
     justify-content: center;
-    line-height: 10vw;
+    line-height: 4vw;
 }
 
 .title_column h1 {
@@ -134,6 +133,10 @@ li {
     border-image-slice: 1;
     border-width: .2vw;
     border-image-source: linear-gradient(to left, #4e26d3, #d5593a);
+
+    --myColor1: transparent;
+    --myColor2: transparent;
+
     background: linear-gradient(to left, var(--myColor1), var(--myColor2));
     transition: --myColor1 .3s, --myColor2 .3s;
     padding: .5vw 1vw;
@@ -154,12 +157,7 @@ li {
 }
 
 .img_column {
-    width: 60%;
-    position: relative;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-grid;
 }
 
 /*-----------------------------------*/
@@ -169,7 +167,7 @@ li {
     text-align: center;
     border-radius: 10px;
     height: 25vw;
-    width: 15vw;
+    width: auto;
     margin: 1vw;
     overflow: hidden;
     outline: 1px solid transparent;
@@ -177,6 +175,7 @@ li {
 }
 
 .p_card > img {
+    position: relative;
     border-radius: 10px;
     height: 100%;
     width: 100%;
@@ -192,6 +191,8 @@ li {
     color: white;
     text-decoration: none;
     transition: .4s;
+    opacity: 0%;
+    text-align: left;
 }
 
 .p_card:hover > img {
@@ -201,8 +202,28 @@ li {
     transform: scale(1.1);
 }
 
+.p_card:hover > div {
+    opacity: 100%;
+    transition: .4s;
+}
+
 .p_card:hover {
     outline: 1px solid white;
     transition: .4s;
     outline-offset: -1vh;
+}
+
+.line {
+    background-color: rgba(255, 255, 255, 0.25);
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 1px;
+
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+.invisBreak {
+    margin-bottom: 5vw;
 }
