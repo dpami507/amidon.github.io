@@ -66,6 +66,7 @@ li {
     animation-name: gradientLine;
     animation-iteration-count: infinite;
     animation-duration: 10s;
+    background-color: black;
 }
 
 @keyframes gradientLine {
@@ -78,7 +79,7 @@ li {
 /*-----------------------------------*/
 
 #about {
-    margin-top: 5vw;
+
     width: 50vw;
     margin-left: auto;
     margin-right: auto;
