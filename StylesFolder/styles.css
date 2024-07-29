@@ -211,7 +211,7 @@ li {
 .p_card:hover {
     outline: 1px solid white;
     transition: .4s;
-    outline-offset: -1vh;
+    outline-offset: -.5vw;
 }
 
 .line {

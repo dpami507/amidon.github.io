@@ -119,7 +119,7 @@ li {
 #work_card:hover {
     transition: .4s;
     outline: 1px solid white;
-    outline-offset: -1vh;
+    outline-offset: -.5vw;
 }
 
 #work_card:hover > div {
