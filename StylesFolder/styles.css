@@ -103,13 +103,13 @@ li {
     syntax: '<color>';
     initial-value: black;
     inherits: false;
-  }
+}
   
-  @property --myColor2 {
+@property --myColor2 {
     syntax: '<color>';
     initial-value: black;
     inherits: false;
-  }
+}
 
 .title_column {
     padding: 1vw;
