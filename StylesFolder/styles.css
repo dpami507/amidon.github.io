@@ -132,7 +132,7 @@ li {
     text-decoration: none;
     border: 1px solid;
     border-image-slice: 1;
-    border-width: .2vw;
+    border-width: .15vw;
     border-image-source: linear-gradient(to left, #4e26d3, #d5593a);
 
     --myColor1: transparent;
@@ -148,7 +148,7 @@ li {
     font-size: 1vw;
     border: 1px solid;
     border-image-slice: 1;
-    border-width: .1vw;
+    border-width: .15w;
     border-image-source: linear-gradient(to left, #4e26d3, #d5593a);
 
     --myColor1: #4e26d3;

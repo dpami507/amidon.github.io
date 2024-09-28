@@ -176,7 +176,7 @@ input[type=email], select, textarea {
 
     border: 1px solid;
     border-image-slice: 1;
-    border-width: .2vw;
+    border-width: .15vw;
     border-image-source: linear-gradient(to left, #4e26d3, #d5593a);
 
     --myColor1: transparent;
@@ -195,7 +195,7 @@ input[type=email], select, textarea {
 
     border: 1px solid;
     border-image-slice: 1;
-    border-width: .2vw;
+    border-width: .15vw;
     border-image-source: linear-gradient(to left, #4e26d3, #d5593a);
 
     --myColor1: transparent;
@@ -213,7 +213,7 @@ input[type=email], select, textarea {
 
     border: 1px solid;
     border-image-slice: 1;
-    border-width: .2vw;
+    border-width: .15vw;
     border-image-source: linear-gradient(to left, #4e26d3, #d5593a);
 
     --myColor1: transparent;
@@ -248,7 +248,7 @@ input[type=email], select, textarea {
     text-decoration: none;
     border: 1px solid;
     border-image-slice: 1;
-    border-width: .2vw;
+    border-width: .15vw;
     border-image-source: linear-gradient(to left, #4e26d3, #d5593a);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
